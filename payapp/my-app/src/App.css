@@ -1,0 +1,226 @@
+
+  @keyframes moveLight {
+    0% {
+      background-position: -100% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .light {
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 200%;
+    height: 3px;
+    background: linear-gradient(to right, #ff8a00, #ff0084, #ff3838);
+    background-size: 200% 100%;
+    animation: moveLight 4s linear infinite;
+    border-radius: 1px; /* To make it appear as a thin line */
+  }
+
+  .content {
+    z-index: 1; /* Ensure the text content is above the light */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr); /* 10 columns */
+    grid-template-rows: repeat(20, 1fr); /* 10 rows */
+    width: "100%"; /* Full width of the viewport */
+    height: 93vh; /* Full height of the viewport */
+  }
+  
+  
+  .grid-square {
+    background-color: #f2f2f2; /* Light gray */
+    border: 1px solid #ccc; /* Light border */
+    transition: background-color 0.3s; /* Smooth color transition */
+  }
+  
+  .grid-square:hover {
+    background-color: #ffffcc; /* Light yellow on hover */
+  }
+  .grid-square1 {
+    background-color:#fdfbcb; /* Light gray */
+    border: 1px solid #ccc; /* Light border */
+    transition: background-color 0.3s; /* Smooth color transition */
+  }
+  
+  .grid-square1:hover{
+    background-color: 	#edc3d8; /* Light yellow on hover */
+  }
+  /*###############################################*/
+ 
+  .floating-login-form {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 400px; /* Set a specific width */
+    height: 550px; /* Set a specific height */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+  }
+  .floating-login-form1 {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 400px; /* Set a specific width */
+    height: 600px; /* Set a specific height */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .toggle-user {
+    text-align: center;
+    cursor: pointer;
+  }
+  /****************/
+  .tweet-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tweet-box {
+    display: flex;
+    align-items: flex-start;
+    background-color: white;
+    padding: 20px; /* Adjust padding as needed */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    background-color: lightblue; /* Change background color */
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .tweet-content {
+    flex-grow: 1;
+  }
+  
+  .user-info {
+    display:block;
+  }
+  
+  .username {
+    font-weight: bold;
+  }
+  
+  .verified {
+  margin-left: 5px;
+  width: 16px; /* Adjust the width as needed */
+  height: 16px; /* Adjust the height as needed */
+
+  }
+  
+  .tweet-text {
+    margin-top: 5px;
+  }
+  
+  .tweet-icons {
+    margin-top: 5px;
+    text-align: right;
+  }
+  
+  .twitter-bird {
+  width: 24px; /* Adjust the width as needed */
+  height: 24px; 
+  }
+  /*********************************/
+  .floating-card {
+    background-color: white;
+    /* margin: 20px; */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+    margin-left:"13%";
+    margin-top:"10%";
+    width:"74%";
+    height:"25%";
+  }
+  /**********************************/
+  .container2 {
+    justify-content: center;
+    margin-top: 50px;
+    max-width: 40rem;
+    width: 60%;
+    min-height: 300px;
+    height: auto;
+    box-shadow: 0 12px 48px 0px rgb(109 117 141 / 20%);
+    background: rgb(255 255 255);
+    border: 0.5px solid rgb(231 233 245);
+    border-radius: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+.container2:focus {
+    border: 0.3px solid rgb(43, 45, 56, 0.3);
+    outline: none;
+}
+
+/*******************************/
+.card {
+  max-width:700px;
+  max-height: 300px; /* Set the maximum height of the card */
+  overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+.scrollable-content {
+  padding: 10px; /* Optional: Add padding to the scrollable content */
+}
+
+.item {
+  margin-bottom: 20px; /* Optional: Add margin between items */
+}
